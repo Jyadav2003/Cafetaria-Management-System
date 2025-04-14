@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Food Item</title>
+  <link rel="stylesheet" href="edit-food.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Edit Food Item</h1>
+    <form id="edit-food-form">
+      <label for="food-id">Food ID:</label>
+      <input type="text" id="food-id" name="food-id" placeholder="Enter food id" required>
+
+      <label for="food-price">Price (₹):</label>
+      <input type="number" id="food-price" name="food-price" placeholder="Enter price" required>
+
+      <label for="food-category">Category:</label>
+      <select id="food-category" name="food-category">
+        <option value="starter">Starter</option>
+        <option value="main-course">Main Course</option>
+        <option value="dessert">Dessert</option>
+      </select>
+
+      <button type="submit" class="btn-submit">Update Food Item</button>
+    </form>
+
+    <p id="message"></p>
+  </div>
+
+  <script src="edit-food.js"></script>
+</body>
+</html>

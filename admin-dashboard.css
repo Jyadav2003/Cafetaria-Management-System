@@ -1,0 +1,252 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Admin Dashboard Container */
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 30px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Dashboard Title */
+h1 {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Button Container */
+.admin-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Button Style */
+button {
+  background-color: #0072ff;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 48%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+/* Button Hover Effect */
+button:hover {
+  background-color: #0057d1;
+  transform: translateY(-5px);
+}
+
+/* Focused Button */
+button:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+}
+
+/* Buttons with different colors */
+#add-food-btn {
+  background-color: #28a745;
+}
+
+#edit-food-btn {
+  background-color: #ffc107;
+}
+
+#delete-food-btn {
+  background-color: #dc3545;
+}
+
+#place-order-btn {
+  background-color: #17a2b8;
+}
+
+#display-menu-btn {
+  background-color: #007bff;
+}
+
+#display-order-summary-btn {
+  background-color: #6f42c1;
+}
+
+#display-stack-btn {
+  background-color: #fd7e14;
+}
+
+#display-order-queue-btn {
+  background-color: #20c997;
+}
+
+#process-order-btn {
+  background-color: #6610f2;
+}
+
+/* Make Buttons Full Width on Small Screens */
+@media screen and (max-width: 768px) {
+  button {
+    width: 100%;
+  }
+}
+
+/* Sidebar Navigation (for Admin) */
+.sidebar {
+  width: 250px;
+  background-color: #343a40;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100vh;
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.sidebar a {
+  color: #d1d1d1;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #0072ff;
+  color: white;
+}
+
+/* Content Area */
+.main-content {
+  margin-left: 270px; /* To give space for the sidebar */
+  width: 100%;
+  padding: 30px;
+}
+
+/* Footer (Optional) */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #343a40;
+  color: white;
+  margin-top: 30px;
+  width: 100%;
+}
+
+/* Clean up animations and general styles */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Base button layout for <a><button></button></a> structure */
+.admin-buttons a {
+  width: 48%;
+  text-decoration: none;
+}
+
+.admin-buttons a button {
+  width: 100%;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Hover effect for all */
+.admin-buttons a button:hover {
+  transform: translateY(-5px);
+  filter: brightness(0.9);
+}
+
+/* Specific Colors per Button */
+#add-food-btn {
+  background-color: #28a745; /* Green */
+}
+
+#edit-food-btn {
+  background-color: #ffc107; /* Yellow */
+  color: #333;
+}
+
+#delete-food-btn {
+  background-color: #dc3545; /* Red */
+}
+
+#place-order-btn {
+  background-color: #17a2b8; /* Cyan */
+}
+
+#display-menu-btn {
+  background-color: #007bff; /* Blue */
+}
+
+#display-order-summary-btn {
+  background-color: #6f42c1; /* Purple */
+}
+
+#display-stack-btn {
+  background-color: #fd7e14; /* Orange */
+}
+
+#display-order-queue-btn {
+  background-color: #20c997; /* Teal */
+}
+
+#process-order-btn {
+  background-color: #6610f2; /* Indigo */
+}
+
+/* Responsive for small screens */
+@media screen and (max-width: 768px) {
+  .admin-buttons a {
+    width: 100%;
+  }
+}

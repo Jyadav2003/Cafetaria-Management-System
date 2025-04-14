@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Your Order - Cafeteria Management</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <div class="logo">
+            <h1>Food at Your Service</h1>
+            <p>Serving Your Favorite Dishes!</p>
+        </div>
+        <div class="navigation">
+            <a href="index.html">Menu</a>
+            <a href="order.html">Place Order</a>
+            <a href="queue.html">Order Queue</a>
+            <a href="admin.html">Admin Login</a>
+        </div>
+    </div>
+
+    <!-- Order Form Section -->
+    <div class="container">
+        <h2>Place Your Order</h2>
+        <form id="customer-form">
+            <!-- Cart Items Section -->
+            <div id="cart-items-section">
+                <h3>Cart Items:</h3>
+                <table id="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Price (₹)</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-table-body">
+                        <!-- Cart items will be dynamically populated here -->
+                    </tbody>
+                </table>
+                <div id="total-price">
+                    <!-- Total Price will be displayed here -->
+                </div>
+            </div>
+
+            <!-- Customer Details Section -->
+            <h3>Customer Details</h3>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" rows="3" required></textarea>
+
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" required>
+                <option value="UPI">UPI</option>
+                <option value="Credit/Debit Card">Credit/Debit Card</option>
+                <option value="Cash on Delivery">Cash on Delivery</option>
+            </select>
+
+            <button type="submit" class="place-order-btn">Place Order</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Cafeteria Management System | All Rights Reserved</p>
+    </footer>
+
+    <script src="order.js"></script>
+</body>
+</html>

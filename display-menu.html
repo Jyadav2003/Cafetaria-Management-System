@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Cafeteria Management System</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Cafeteria</h1>
+            <p>Your Food, Your Way</p>
+        </div>
+    </header>
+
+    <section class="menu">
+        <h2>Our Menu</h2>
+
+        <!-- Starters - Vegetarian -->
+        <h3>Starters - Vegetarian</h3>
+<div class="menu-item" id="starter1">
+    <img src="samosa.jpg" alt="Veg Samosa" class="menu-img">
+    <h3>Veg Samosa</h3>
+    <p>Hand-rolled pastries stuffed with spiced potatoes and onions.</p>
+    <p class="price">₹50</p>
+    <button class="add-to-cart" onclick="addToCart('Veg Samosa', 50)">Add to Cart</button>
+
+    <div class="quantity">
+        <button class="qty-btn" onclick="updateQuantity('Veg Samosa', -1)">-</button>
+        <span id="Veg Samosa-quantity" class="quantity-display">0</span>
+        <button class="qty-btn" onclick="updateQuantity('Veg Samosa', 1)">+</button>
+    </div>
+</div>
+
+<div class="menu-item" id="starter2">
+    <img src="veg pakoda.jpg" alt="Mix Veg Pakoda" class="menu-img">
+    <h3>Mix Veg Pakoda</h3>
+    <p>Assorted vegetables dipped in gram flour batter and deep-fried.</p>
+    <p class="price">₹70</p>
+    <button class="add-to-cart" onclick="addToCart('Mix Veg Pakoda', 70)">Add to Cart</button>
+
+    <div class="quantity">
+        <button class="qty-btn" onclick="updateQuantity('Mix Veg Pakoda', -1)">-</button>
+        <span id="Mix Veg Pakoda-quantity" class="quantity-display">0</span>
+        <button class="qty-btn" onclick="updateQuantity('Mix Veg Pakoda', 1)">+</button>
+    </div>
+</div>
+
+<div class="menu-item" id="starter3">
+    <img src="Gobi-65.jpg" alt="Gobi 65" class="menu-img">
+    <h3>Gobi 65</h3>
+    <p>Cauliflower florets marinated in spices and deep-fried.</p>
+    <p class="price">₹100</p>
+    <button class="add-to-cart" onclick="addToCart('Gobi 65', 100)">Add to Cart</button>
+
+    <div class="quantity">
+        <button class="qty-btn" onclick="updateQuantity('Gobi 65', -1)">-</button>
+        <span id="Gobi 65-quantity" class="quantity-display">0</span>
+        <button class="qty-btn" onclick="updateQuantity('Gobi 65', 1)">+</button>
+    </div>
+</div>
+
+        <div class="menu-item" id="starter4">
+            <img src="paneer65.jpg" alt="Paneer 65" class="menu-img">
+            <h3>Paneer 65</h3>
+            <p>Cottage cheese cubes marinated and deep-fried.</p>
+            <p class="price">₹120</p>
+            <button class="add-to-cart" onclick="addToCart('Paneer 65', 120)">Add to Cart</button>
+  <div class="quantity">
+                <button class="qty-btn" onclick="updateQuantity('Paneer 65', -1)">-</button>
+                <span id="Paneer 65-quantity" class="quantity-display">0</span>
+                <button class="qty-btn" onclick="updateQuantity('Paneer 65', 1)">+</button>
+            </div>
+        </div>
+
+        <!-- Starters - Non-Vegetarian -->
+        <h3>Starters - Non-Vegetarian</h3>
+        <div class="menu-item" id="starter5">
+            <img src="chicken65.jpg" alt="Chicken 65" class="menu-img">
+            <h3>Chicken 65</h3>
+            <p>Spicy deep-fried chicken pieces.</p>
+            <p class="price">₹150</p>
+            <button class="add-to-cart" onclick="addToCart('Chicken 65', 150)">Add to Cart</button>
+ <div class="quantity">
+                <button class="qty-btn" onclick="updateQuantity('Chicken 65', -1)">-</button>
+                <span id="Chicken 65-quantity" class="quantity-display">0</span>
+                <button class="qty-btn" onclick="updateQuantity('Chicken 65', 1)">+</button>
+            </div>
+        </div>
+        <div class="menu-item" id="starter6">
+            <img src="shrimp65.jpg" alt="Shrimp 65" class="menu-img">
+            <h3>Shrimp 65</h3>
+            <p>Spicy deep-fried shrimp.</p>
+            <p class="price">₹180</p>
+            <button class="add-to-cart" onclick="addToCart('Shrimp 65', 180)">Add to Cart</button>
+
+ <div class="quantity">
+                <button class="qty-btn" onclick="updateQuantity('Shrimp 65', -1)">-</button>
+                <span id="Shrimp 65-quantity" class="quantity-display">0</span>
+                <button class="qty-btn" onclick="updateQuantity('Shrimp 65', 1)">+</button>
+            </div>
+        </div>
+        <div class="menu-item" id="starter7">
+            <img src="chickenlollipop.jpg" alt="Chicken Lollipops" class="menu-img">
+            <h3>Chicken Lollipops</h3>
+            <p>Chicken wings marinated in spices and deep-fried.</p>
+            <p class="price">₹200</p>
+            <button class="add-to-cart" onclick="addToCart('Chicken Lollipops', 200)">Add to Cart</button>
+
+ <div class="quantity">
+                <button class="qty-btn" onclick="updateQuantity('Chicken Lollipops', -1)">-</button>
+                <span id="Chicken Lollipops-quantity" class="quantity-display">0</span>
+                <button class="qty-btn" onclick="updateQuantity('Chicken Lollipops', 1)">+</button>
+            </div>
+        </div>
+        <div class="menu-item" id="starter8">
+            <img src="apollofish.jpg" alt="Apollo Fish" class="menu-img">
+            <h3>Apollo Fish</h3>
+            <p>Boneless fish pieces sautéed with spices.</p>
+            <p class="price">₹250</p>
+            <button class="add-to-cart" onclick="addToCart('Apollo Fish', 250)">Add to Cart</button>
+
+ <div class="quantity">
+                <button class="qty-btn" onclick="updateQuantity('Apollo Fish', -1)">-</button>
+                <span id="Apollo Fish-quantity" class="quantity-display">0</span>
+                <button class="qty-btn" onclick="updateQuantity('Apollo Fish', 1)">+</button>
+            </div>
+        </div>
+
+        <!-- Main Course - Vegetarian -->
+        <h3>Main Course - Vegetarian</h3>
+        <div class="menu-item" id="main1">
+            <img src="paneerbuttermasala.jpg" alt="Paneer Butter Masala" class="menu-img">
+            <h3>Paneer Butter Masala</h3>
+            <p>Cottage cheese cooked in a creamy tomato-based gravy.</p>
+            <p class="price">₹200</p>
+            <button class="add-to-cart" onclick="addToCart('Paneer Butter Masala', 200)">Add to Cart</button>
+
+ <div class="quantity">
+                <button class="qty-btn" onclick="updateQuantity('Paneer Butter Masala', -1)">-</button>
+                <span id="Paneer Butter Masala-quantity" class="quantity-display">0</span>
+                <button class="qty-btn" onclick="updateQuantity('Paneer Butter Masala', 1)">+</button>
+            </div>
+        </div>
+        <div class="menu-item" id="main2">
+            <img src="chanamasala.jpg" alt="Chana Masala" class="menu-img">
+            <h3>Chana Masala</h3>
+            <p>Chickpeas cooked in a spicy gravy.</p>
+            <p class="price">₹150</p>
+            <button class="add-to-cart" onclick="addToCart('Chana Masala', 150)">Add to Cart</button>
+
+ <div class="quantity">
+                <button class="qty-btn" onclick="updateQuantity('Chana Masala', -1)">-</button>
+                <span id="Chana Masala-quantity" class="quantity-display">0</span>
+                <button class="qty-btn" onclick="updateQuantity('Chana Masala', 1)">+</button>
+            </div>
+        </div>
+        <div class="menu-item" id="main3">
+            <img src="daltadka.jpg" alt="Dal Tadka" class="menu-img">
+            <h3>Dal Tadka</h3>
+            <p>Yellow lentils tempered with spices.</p>
+            <p class="price">₹100</p>
+            <button class="add-to-cart" onclick="addToCart('Dal Tadka', 100)">Add to Cart</button>
+
+ <div class="quantity">
+                <button class="qty-btn" onclick="updateQuantity('Dal Tadka', -1)">-</button>
+                <span id="Dal Tadka-quantity" class="quantity-display">0</span>
+                <button class="qty-btn" onclick="updateQuantity('Dal Tadka', 1)">+</button>
+            </div>
+        </div>
+        <div class="menu-item" id="main4">
+            <img src="malaikofta.jpg" alt="Malai Kofta" class="menu-img">
+            <h3>Malai Kofta</h3>
+            <p>Vegetable balls in a rich creamy sauce.</p>
+            <p class="price">₹250</p>
+            <button class="add-to-cart" onclick="addToCart('Malai Kofta', 250)">Add to Cart</button>
+
+ <div class="quantity">
+                <button class="qty-btn" onclick="updateQuantity('Malai Kofta', -1)">-</button>
+                <span id="Malai Kofta-quantity" class="quantity-display">0</span>
+                <button class="qty-btn" onclick="updateQuantity('Malai Kofta', 1)">+</button>
+            </div>
+        </div>
+
+        <!-- Main Course - Non-Vegetarian -->
+        <h3>Main Course - Non-Vegetarian</h3>
+        <div class="menu-item" id="main5">
+            <img src="butterchicken.jpg" alt="Butter Chicken" class="menu-img">
+            <h3>Butter Chicken</h3>
+            <p>Chicken cooked in a creamy tomato gravy.</p>
+            <p class="price">₹250</p>
+            <button class="add-to-cart" onclick="addToCart('Butter Chicken', 250)">Add to Cart</button>
+
+ <div class="quantity">
+                <button class="qty-btn" onclick="updateQuantity('Butter Chicken', -1)">-</button>
+                <span id="Butter Chicken-quantity" class="quantity-display">0</span>
+                <button class="qty-btn" onclick="updateQuantity('Butter Chicken', 1)">+</button>
+            </div>
+        </div>
+        <div class="menu-item" id="main6">
+            <img src="chickentikkamasala.jpg" alt="Chicken Tikka Masala" class="menu-img">
+            <h3>Chicken Tikka Masala</h3>
+            <p>Grilled chicken pieces in a spicy gravy.</p>
+            <p class="price">₹275</p>
+            <button class="add-to-cart" onclick="addToCart('Chicken Tikka Masala', 275)">Add to Cart</button>
+
+ <div class="quantity">
+                <button class="qty-btn" onclick="updateQuantity('Chicken Tikka Masala', -1)">-</button>
+                <span id="Chicken Tikka Masala-quantity" class="quantity-display">0</span>
+                <button class="qty-btn" onclick="updateQuantity('Chicken Tikka Masala', 1)">+</button>
+            </div>
+        </div>
+        <div class="menu-item" id="main7">
+            <img src="goatcurry.jpg" alt="Goat Curry" class="menu-img">
+            <h3>Goat Curry</h3>
+            <p>Tender goat meat cooked in traditional spices.</p>
+            <p class="price">₹300</p>
+            <button class="add-to-cart" onclick="addToCart('Goat Curry', 300)">Add to Cart</button>
+
+ <div class="quantity">
+                <button class="qty-btn" onclick="updateQuantity('Goat Curry', -1)">-</button>
+                <span id="Goat Curry-quantity" class="quantity-display">0</span>
+                <button class="qty-btn" onclick="updateQuantity('Goat Curry', 1)">+</button>
+            </div>
+        </div>
+        <div class="menu-item" id="main8">
+            <img src="fishcurry.jpg" alt="Fish Curry" class="menu-img">
+            <h3>Fish Curry</h3>
+            <p>Fish cooked in a tangy tamarind-based gravy.</p>
+            <p class="price">₹250</p>
+            <button class="add-to-cart" onclick="addToCart('Fish Curry', 250)">Add to Cart</button>
+
+ <div class="quantity">
+                <button class="qty-btn" onclick="updateQuantity('Fish Curry', -1)">-</button>
+                <span id="Fish Curry-quantity" class="quantity-display">0</span>
+                <button class="qty-btn" onclick="updateQuantity('Fish Curry', 1)">+</button>
+            </div>
+        </div>
+
+        <!-- Breads -->
+        <h3>Breads</h3>
+        <div class="menu-item" id="bread1">
+            <img src="naan.jpg" alt="Naan" class="menu-img">
+            <h3>Naan</h3>
+            <p>Leavened flatbread baked in a tandoor.</p>
+            <p class="price">₹40</p>
+            <button class="add-to-cart" onclick="addToCart('Naan', 40)">Add to Cart</button>
+
+ <div class="quantity">
+                <button class="qty-btn" onclick="updateQuantity('Naan', -1)">-</button>
+                <span id="Naan-quantity" class="quantity-display">0</span>
+                <button class="qty-btn" onclick="updateQuantity('Naan', 1)">+</button>
+            </div>
+        </div>
+        <div class="menu-item" id="bread2">
+            <img src="butternaan.jpg" alt="Butter Naan" class="menu-img">
+            <h3>Butter Naan</h3>
+            <p>Naan brushed with butter.</p>
+            <p class="price">₹60</p>
+            <button class="add-to-cart" onclick="addToCart('Butter Naan', 60)">Add to Cart</button>
+
+ <div class="quantity">
+                <button class="qty-btn" onclick="updateQuantity('Butter Naan', -1)">-</button>
+                <span id="Butter Naan-quantity" class="quantity-display">0</span>
+                <button class="qty-btn" onclick="updateQuantity('Butter Naan', 1)">+</button>
+            </div>
+        </div>
+        <div class="menu-item" id="bread3">
+            <img src="garlicnaan.jpg" alt="Garlic Naan" class="menu-img">
+            <h3>Garlic Naan</h3>
+            <p>Naan topped with minced garlic.</p>
+            <p class="price">₹70</p>
+            <button class="add-to-cart" onclick="addToCart('Garlic Naan', 70)">Add to Cart</button>
+
+ <div class="quantity">
+                <button class="qty-btn" onclick="updateQuantity('Garlic Naan', -1)">-</button>
+                <span id="Garlic Naan-quantity" class="quantity-display">0</span>
+                <button class="qty-btn" onclick="updateQuantity('Garlic Naan', 1)">+</button>
+            </div>
+        </div>
+
+        <!-- Rice & Biryani -->
+        <h3>Rice & Biryani</h3>
+        <div class="menu-item" id="rice1">
+            <img src="plainrice.jpg" alt="Plain Rice" class="menu-img">
+            <h3>Plain Rice</h3>
+            <p>Steamed white rice.</p>
+            <p class="price">₹60</p>
+            <button class="add-to-cart" onclick="addToCart('Plain Rice', 60)">Add to Cart</button>
+
+ <div class="quantity">
+                <button class="qty-btn" onclick="updateQuantity('Plain Rice', -1)">-</button>
+                <span id="Plain Rice-quantity" class="quantity-display">0</span>
+                <button class="qty-btn" onclick="updateQuantity('Plain Rice', 1)">+</button>
+            </div>
+        </div>
+        <div class="menu-item" id="rice2">
+            <img src="biryani.jpg" alt="Chicken Biryani" class="menu-img">
+            <h3>Chicken Biryani</h3>
+            <p>Aromatic rice with meat or vegetables, cooked in spices.</p>
+            <p class="price">₹250</p>
+            <button class="add-to-cart" onclick="addToCart('Chicken Biryani', 250)">Add to Cart</button>
+
+ <div class="quantity">
+                <button class="qty-btn" onclick="updateQuantity('Chicken Biryani', -1)">-</button>
+                <span id="Chicken Biryani-quantity" class="quantity-display">0</span>
+                <button class="qty-btn" onclick="updateQuantity('Chicken Biryani', 1)">+</button>
+            </div>
+        </div>
+        <div class="menu-item" id="rice3">
+            <img src="vegbiryani.jpg" alt="Vegetable Biryani" class="menu-img">
+            <h3>Vegetable Biryani</h3>
+            <p>Spicy rice with mixed vegetables.</p>
+            <p class="price">₹200</p>
+            <button class="add-to-cart" onclick="addToCart('Vegetable Biryani', 200)">Add to Cart</button>
+
+ <div class="quantity">
+                <button class="qty-btn" onclick="updateQuantity('Vegetable Biryani', -1)">-</button>
+                <span id="Vegetable Biryani-quantity" class="quantity-display">0</span>
+                <button class="qty-btn" onclick="updateQuantity('Vegetable Biryani', 1)">+</button>
+            </div>
+        </div>
+
+        <!-- Desserts -->
+        <h3>Desserts</h3>
+        <div class="menu-item" id="dessert1">
+            <img src="gualbjamun.jpg" alt="Gulab Jamun" class="menu-img">
+            <h3>Gulab Jamun</h3>
+            <p>Deep-fried milk balls soaked in sugar syrup.</p>
+            <p class="price">₹80</p>
+            <button class="add-to-cart" onclick="addToCart('Gulab Jamun', 80)">Add to Cart</button>
+
+ <div class="quantity">
+                <button class="qty-btn" onclick="updateQuantity('Gulab Jamun', -1)">-</button>
+                <span id="Gulab Jamun-quantity" class="quantity-display">0</span>
+                <button class="qty-btn" onclick="updateQuantity('Gulab Jamun', 1)">+</button>
+            </div>
+        </div>
+        <div class="menu-item" id="dessert2">
+            <img src="kheer.jpg" alt="Kheer" class="menu-img">
+            <h3>Kheer</h3>
+            <p>Sweet rice pudding made with milk and sugar.</p>
+            <p class="price">₹100</p>
+            <button class="add-to-cart" onclick="addToCart('Kheer', 100)">Add to Cart</button>
+
+ <div class="quantity">
+                <button class="qty-btn" onclick="updateQuantity('Kheer', -1)">-</button>
+                <span id="Kheer-quantity" class="quantity-display">0</span>
+                <button class="qty-btn" onclick="updateQuantity('Kheer', 1)">+</button>
+            </div>
+        </div>
+        <div class="menu-item" id="dessert3">
+            <img src="rasgulla.jpg" alt="Rasgulla" class="menu-img">
+            <h3>Rasgulla</h3>
+            <p>Spongy and syrup-soaked dumplings.</p>
+            <p class="price">₹90</p>
+            <button class="add-to-cart" onclick="addToCart('Rasgulla', 90)">Add to Cart</button>
+
+ <div class="quantity">
+                <button class="qty-btn" onclick="updateQuantity('Rasgulla', -1)">-</button>
+                <span id="Rasgulla-quantity" class="quantity-display">0</span>
+                <button class="qty-btn" onclick="updateQuantity('Rasgulla', 1)">+</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Cafeteria Management System | All Rights Reserved</p>
+    </footer>
+
+    <script src="menu.js"></script>
+
+<div id="custom-alert" class="custom-alert">
+    <div class="alert-content">
+        <span id="alert-message"></span>
+        <button onclick="closeAlert()">Close</button>
+    </div>
+</div>
+</body>
+</html>
